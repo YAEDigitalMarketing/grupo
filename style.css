@@ -291,6 +291,7 @@ ul {
   border-radius: 8px;
   background-color: var(--branco);
   padding: 4px;
+object-fit:contain;
 }
 
 .footer__slogan {
