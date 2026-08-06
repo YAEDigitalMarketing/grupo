@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institucional | Quem Somos, Serviços e Contato</title>
+
+  <!-- Fonte moderna do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================= CABEÇALHO ======================= -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+
+      <!-- Logomarca -->
+      <a href="#topo" class="logo">
+        <img src="images/logo.jpg" alt="Logomarca da empresa" class="logo__img" />
+      </a>
+
+      <!-- Menu de navegação (some no mobile, vira menu hambúrguer) -->
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#quem-somos" class="nav__link">Quem Somos</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão de destaque para o WhatsApp -->
+      <a
+        href="https://chat.whatsapp.com/E5YlM5g4FtDHiiXi9pxzmc"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--whatsapp"
+      >
+        Entrar no Grupo do WhatsApp
+      </a>
+
+      <!-- Botão hambúrguer (aparece apenas no mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================= QUEM SOMOS ======================= -->
+    <section class="section quem-somos" id="quem-somos">
+      <div class="container">
+        <span class="eyebrow">Quem Somos</span>
+        <h2 class="section__title">Compromisso com quem confia em nós</h2>
+
+        <!--
+          TEXTO INSTITUCIONAL - fácil de editar
+          Basta alterar o conteúdo do parágrafo abaixo.
+        -->
+        <p class="quem-somos__texto">
+          Somos uma empresa comprometida em oferecer atendimento de qualidade,
+          unindo confiança e compromisso em cada etapa do relacionamento com
+          nossos clientes. Trabalhamos todos os dias para entregar soluções
+          sérias, transparentes e feitas sob medida, sempre priorizando a
+          satisfação e a segurança de quem escolhe estar ao nosso lado.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= SERVIÇOS OFERECIDOS ======================= -->
+    <section class="section servicos" id="servicos">
+      <div class="container">
+        <span class="eyebrow">Serviços</span>
+        <h2 class="section__title">O que oferecemos</h2>
+
+        <!--
+          CARDS DE SERVIÇOS - fáceis de editar
+          Para adicionar/remover um serviço, copie ou apague um bloco <article class="card">.
+          Para alterar o link do botão "Saiba Mais", troque o valor do atributo href.
+        -->
+        <div class="servicos__grid">
+
+          <article class="card">
+            <h3 class="card__title">Serviço 1</h3>
+            <p class="card__texto">
+              Descreva aqui, de forma breve, do que se trata este serviço e
+              qual benefício ele traz para o cliente.
+            </p>
+            <a href="#" class="btn btn--outline">Saiba Mais</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Serviço 2</h3>
+            <p class="card__texto">
+              Descreva aqui, de forma breve, do que se trata este serviço e
+              qual benefício ele traz para o cliente.
+            </p>
+            <a href="#" class="btn btn--outline">Saiba Mais</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Serviço 3</h3>
+            <p class="card__texto">
+              Descreva aqui, de forma breve, do que se trata este serviço e
+              qual benefício ele traz para o cliente.
+            </p>
+            <a href="#" class="btn btn--outline">Saiba Mais</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= RODAPÉ / CONTATO ======================= -->
+  <footer class="footer" id="contato">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <img src="images/logo.jpg" alt="Logomarca da empresa" class="footer__logo" />
+        <p class="footer__slogan">Qualidade, confiança e compromisso.</p>
+      </div>
+
+      <!--
+        DADOS DE CONTATO - fáceis de editar
+        Altere os textos abaixo pelos dados reais da empresa.
+      -->
+      <div class="footer__contato">
+        <h4 class="footer__titulo">Contato</h4>
+        <p>Endereço: Rua Exemplo, 123 - Cidade/UF</p>
+        <p>WhatsApp: (00) 00000-0000</p>
+        <p>E-mail: contato@suaempresa.com.br</p>
+      </div>
+
+      <div class="footer__cta">
+        <a
+          href="https://chat.whatsapp.com/E5YlM5g4FtDHiiXi9pxzmc"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--whatsapp"
+        >
+          Entrar no Grupo do WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="ano"></span> Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante "voltar ao topo" -->
+  <button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
